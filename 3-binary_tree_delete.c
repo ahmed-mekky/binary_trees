@@ -36,6 +36,14 @@ void binary_tree_delete(binary_tree_t *tree)
 		free(tree);
 	}
 }
+
+/**
+ * is_leaf - is it?
+ *
+ * @node: ..
+ *
+ * Return: ...
+ */
 int is_leaf(const binary_tree_t *node)
 {
 	if (node == NULL)
