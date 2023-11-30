@@ -15,7 +15,7 @@ void binary_tree_delete(binary_tree_t *tree)
 	if (tree->right != NULL)
 		binary_tree_delete(tree->right);
 
-	if (binary_tree_is_leaf(tree))
+	if (is_leaf(tree))
 	{
 		if (tree == NULL)
 		{
@@ -35,4 +35,13 @@ void binary_tree_delete(binary_tree_t *tree)
 		}
 		free(tree);
 	}
+}
+int is_leaf(const binary_tree_t *node)
+{
+	if (node == NULL)
+		return (0);
+	if (node->left == NULL && node->right == NULL)
+		return (1);
+	else
+		return (0);
 }
