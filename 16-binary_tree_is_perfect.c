@@ -64,27 +64,25 @@ int t_size(const binary_tree_t *tree)
  *
  * Return: ...
  */
-int power(int base, int exponent)
-{
+int power(int base, int exponent) {
 	int result = 1;
 
-	for (int i = 0; i < exponent; i++)
-	{
+	for (int i = 0; i < exponent; i++) {
 		result *= base;
 	}
 
-	return (result);
+	return result;
 }
 
 
 /**
- * binary_tree_is_full - whatever
+ * binary_tree_is_perfect - whatever
  *
  * @tree: ..
  *
  * Return: ...
  */
-int binary_tree_is_full(const binary_tree_t *tree)
+int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 
 	if (tree == NULL)
