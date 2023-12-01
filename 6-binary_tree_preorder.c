@@ -1,9 +1,10 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_is_root - is it?
+ * binary_tree_preorder - whatever
  *
- * @node: ..
+ * @tree: ..
+ * @func: ....
  *
  * Return: ...
  */
