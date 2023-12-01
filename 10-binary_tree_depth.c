@@ -10,7 +10,7 @@
  */
 int min(int a, int b)
 {
-	return (a < b) ? a : b;
+	return ((a < b) ? a : b);
 }
 
 /**
@@ -22,11 +22,13 @@ int min(int a, int b)
  */
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
+	size_t x, y;
+
 	if (tree == NULL)
 		return (-1);
 
-	x = binary_tree_height(tree->left);
-	y = binary_tree_height(tree->right);
+	x = binary_tree_depth(tree->left);
+	y = binary_tree_depth(tree->right);
 
 	return (min(x, y) + 1);
 }
