@@ -1,18 +1,6 @@
 #include "binary_trees.h"
 
-/**
- * max - whatever
- *
- * @a: ..
- * @b: ...
- *
- * Return: ...
- */
-int max(int a, int b)
-{
-	return ((a > b) ? a : b);
-}
-
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
 /**
  * t_height - whatever
  *
@@ -30,7 +18,7 @@ int t_height(const binary_tree_t *tree)
 	x = tree->left ? t_height(tree->left) + 1 : 0;
 	y = tree->right ? t_height(tree->right) + 1 : 0;
 
-	return (max(x, y));
+	return (MAX(x, y));
 }
 
 /**
