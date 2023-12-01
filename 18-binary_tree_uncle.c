@@ -33,7 +33,7 @@ binary_tree_t *t_sibling(binary_tree_t *node)
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
-	if (node == NULL ||)
+	if (node == NULL)
 		return (NULL);
 
 	return (t_sibling(node->parent));
