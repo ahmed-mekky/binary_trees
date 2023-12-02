@@ -53,9 +53,9 @@ int t_size(const binary_tree_t *tree)
  */
 int power(int base, int exponent)
 {
-	int result = 1;
+	int result = 1, i;
 
-	for (int i = 0; i < exponent; i++)
+	for (i = 0; i < exponent; i++)
 	{
 		result *= base;
 	}
